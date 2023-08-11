@@ -41,7 +41,7 @@ def review():
                 os.makedirs(save_directory)
             with open(csv_path, mode="w", newline="", encoding="utf-8") as file:
                 writer = csv.writer(file)
-                writer.writerow(['review_title','review_author','review_rating','review_comment'])
+                writer.writerow(['review_rating','review_comment','review_title','review_author'])
                 writer.writerows(reviews)
 
             #return "review loaded"
