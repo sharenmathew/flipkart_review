@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reviews</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Review Title</th>
+                <th>Review Author</th>
+                <th>Review Rating</th>
+                <th>Review Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for review in output %}
+            <tr>
+                <td>{{ review[0] }}</td>
+                <td>{{ review[1] }}</td>
+                <td>{{ review[2] }}</td>
+                <td>{{ review[3] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

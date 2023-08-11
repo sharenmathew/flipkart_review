@@ -44,7 +44,9 @@ def review():
                 writer.writerow(['review_title','review_author','review_rating','review_comment'])
                 writer.writerows(reviews)
 
-            return "review loaded"
+            #return "review loaded"
+            return render_template('result.html', output=reviews) 
+        
         except Exception as e:
             logging.info(e)
             return 'something is wrong'
